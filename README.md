@@ -8,16 +8,15 @@ The process of predicting Arabic Sign Language Recognition (ArSLR) using a multi
 ![ArSLR model](https://github.com/user-attachments/assets/b546df32-2ab4-4347-898f-e5b2d18a302b)
 
 ### Related Article
-This project is related to the research article titled "Static Arabic Sign Language Recognition in Real Time Using Machine Learning and MediaPipe" in 2024 1st International Conference on Emerging Technologies for Dependable Internet of Things (ICETI), IEEE, 2024, pp. 1–8., [Online].Available: https://ieeexplore.ieee.org/document/10777193.
-You can access the article through the following DOI link: 10.1109/ICETI63946.2024.10777193.
+This project is related to the research article titled "Static Arabic Sign Language Recognition in Real Time Using Machine Learning and MediaPipe" in 2024 1st International Conference on Emerging Technologies for Dependable Internet of Things (ICETI), IEEE, 2024, pp. 1–8. You can access the article through the following DOI link: 10.1109/ICETI63946.2024.10777193.
 
 ### Project Structure
-The ArSLR-ML App. is composed of four principal scripts: 
+The ArSLR-ML App. is composed of four principal scripts, and each script contains code for designing the application and many functions: 
 1. Main.py, responsible for the overall application workflow.
 2. Data_collection_widget.py, responsible for hand gesture image collection and preparation.
 3. Training_Widget.py, responsible for classification model training and evaluation of the trained model.
 4. Testing_Widget.py, responsible for testing the trained model in real-time. 
-Each script contains code for designing the application, detailed explanations in the README file and the scripts for clarity and usability.
+, detailed explanations in the README file and the scripts for clarity and usability.
 
 ### Requirements & Libraries
 * Python v3.11 
