@@ -1,8 +1,32 @@
-# ArSLR-ML : A Python-Based Machine Learning Application for Arabic Sign Language Recognition
+## ArSLR-ML : A Python-Based Machine Learning Application for Arabic Sign Language Recognition
 
 
 
-# ArSLR-ML workflow
-The process of predicting Arabic Sign Language Recognition (ArSLR) using a multi-class ML-based model, specifically support vector machines, involves six stages in total: Image Collection (stage 1), Feature Extract  ion (stage 2), Preprocessing (stage 3), Classification (stage 4), Model Evaluation (stage 5), and Finally Real-Time Recognition (stage 6). The architecture of the ArSLR model is depicted in Figure below:
+### ArSLR-ML workflow
+The process of predicting Arabic Sign Language Recognition (ArSLR) using a multi-class Machine Learning-based model, specifically **support vector machines (SVM)**, involves six stages in total: Image Collection (stage 1), Feature Extract  ion (stage 2), Preprocessing (stage 3), Classification (stage 4), Model Evaluation (stage 5), and Finally Real-Time Recognition (stage 6). The architecture of the ArSLR model is depicted in Figure below:
 
-![image](https://github.com/user-attachments/assets/9c756f93-1dac-4a02-a717-0d62ec9c0cc9)
+![ArSLR model](https://github.com/user-attachments/assets/b546df32-2ab4-4347-898f-e5b2d18a302b)
+
+### Related Article
+This project is related to the research article titled "Static Arabic Sign Language Recognition in Real Time Using Machine Learning and MediaPipe" in 2024 1st International Conference on Emerging Technologies for Dependable Internet of Things (ICETI), IEEE, 2024, pp. 1–8., [Online].Available: https://ieeexplore.ieee.org/document/10777193.
+You can access the article through the following DOI link: 10.1109/ICETI63946.2024.10777193.
+
+### Project Structure
+The ArSLR-ML App. is composed of four principal scripts: 
+1. Main.py, responsible for the overall application workflow.
+2. Data_collection_widget.py, responsible for hand gesture image collection and preparation.
+3. Training_Widget.py, responsible for classification model training and evaluation of the trained model.
+4. Testing_Widget.py, responsible for testing the trained model in real-time. 
+Each script contains code for designing the application, detailed explanations in the README file and the scripts for clarity and usability.
+
+### Requirements & Libraries
+* Python v3.11 
+* MediaPipe
+* Scikit-learn
+* Scikit-optimize
+* OpenCV
+* NumPy
+
+### Launch the ArSLR-ML App.
+You can start the project by running the Main.py file in the root directory. This loads the application settings. The system starts by going to the Arabic Sign Language Recognition Model and then deciding whether we want to create a new dataset and train it using the SVM model and evaluate it or move to the real-time testing phase. It enables real-time recognition of static ArSL signs captured by a camera, converts the recognized signs into Arabic speech, and instantly displays them as text on the laptop screen.
+
