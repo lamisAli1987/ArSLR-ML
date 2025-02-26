@@ -1,5 +1,5 @@
 ## ArSLR-ML : A Python-Based Machine Learning Application for Arabic Sign Language Recognition
-
+The ArSLR-ML is a real-time interactive application that uses multi-class Support Vector Machines (SVM) machine learning applied in the classification procedure and MediaPipe in the feature extraction procedure to recognize static Arabic sign language gestures, focusing on numbers and letters and translating them into text and Arabic audio output. The ArSLR-ML was built within the PyCharm IDE using Python with a graphical user interface (GUI), thereby allowing for effective recognition of gestures. The application utilizes the laptop camera and GUI to capture hand gestures to create dataset for machine learning models and implement them in real time.
 
 
 ### ArSLR-ML workflow
