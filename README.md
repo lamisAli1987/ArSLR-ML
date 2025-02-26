@@ -25,6 +25,7 @@ The ArSLR-ML App. is composed of four principal scripts, and each script contain
 * Scikit-optimize
 * OpenCV
 * NumPy
+* PyQt5
 
 ### Launch the ArSLR-ML App.
 You can start the project by running the Main.py file in the root directory. This loads the application settings. The system starts by going to the Arabic Sign Language Recognition Model and then deciding whether we want to create a new dataset and train it using the SVM model and evaluate it or move to the real-time testing phase. It enables real-time recognition of static ArSL signs captured by a camera, converts the recognized signs into Arabic speech, and instantly displays them as text on the laptop screen.
