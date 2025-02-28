@@ -9,6 +9,8 @@ import datetime
 from PyQt5.QtWidgets import QApplication, QSizePolicy, QSpacerItem, QMessageBox, QWidget, QVBoxLayout, QLabel, QPushButton, QHBoxLayout
 from PyQt5.QtGui import QFont, QIcon, QCursor, QImage, QPixmap
 from PyQt5.QtCore import Qt, QSize, pyqtSignal, QTimer
+from PIL import Image, ImageDraw, ImageFont
+from Testing_Letter_sound import labels_dict
 
 class TestingWidget(QWidget):
     testing_requested = pyqtSignal()  # Define the signal here
@@ -181,6 +183,14 @@ class TestingWidget(QWidget):
         # Convert number to string and replace each digit with the corresponding Arabic numeral
         return ''.join(english_to_arabic[digit] if digit in english_to_arabic else digit for digit in str(number))
 
+    def draw_text_with_pil(image, text, position, font_path='arial.ttf', font_size=90):
+        pil_image = Image.fromarray(cv2.cvtColor(image, cv2.COLOR_BGR2RGB))
+        draw = ImageDraw.Draw(pil_image)
+        font = ImageFont.truetype(font_path, font_size)
+        arabic_char = labels_dict[int(text)] if isinstance(text, (int, np.integer)) else text
+        draw.text(position, arabic_char, font=font, fill=(255, 255, 255, 255))  # White color
+        return cv2.cvtColor(np.array(pil_image), cv2.COLOR_RGB2BGR)
+    
     def stop_video(self):
         self.testing_running = False
         self.timer.stop()
